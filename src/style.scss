@@ -1,0 +1,31 @@
+:root {
+  --bg-color: #c2a033;
+  --color: #3f3f3f;
+}
+
+html, body {
+  background-color: var(--bg-color);
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+
+  .svg {
+    padding: 1rem;
+  }
+
+  svg {
+    fill: var(--color);
+    max-width: 32rem;
+    width: 100%;
+  }
+}
+
