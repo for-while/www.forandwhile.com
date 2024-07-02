@@ -10,6 +10,13 @@
     <section x-data="logo" id="logo">
       <div class="svg" x-html="svg"></div>
     </section>
+
+    <div x-data="analytics">
+      <template x-if="scriptUrl && websiteId">
+        <script defer x-bind:src="scriptUrl" x-bind:data-website-id="websiteId"></script>
+      </template>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
