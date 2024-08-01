@@ -4,7 +4,7 @@ export interface AnalyticsState {
 }
 
 export default function Analytics(websiteId: string) {
-  const scriptUrl = 'https://analytics.cloud.aneur.in/script.js'
+  const scriptUrl = 'https://analytics.cloud.forandwhile.com/script.js'
 
   return function(): AnalyticsState {
     return {
