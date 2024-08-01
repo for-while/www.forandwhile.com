@@ -44,6 +44,12 @@ section {
 }
 
 #logo {
+  padding-top: 3rem;
+
+  @media (min-width: $bp-desktop) {
+    padding-top: 1rem;
+  }
+
   h1 {
     display: none;
   }
