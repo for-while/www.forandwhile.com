@@ -18,12 +18,12 @@
 
       <section x-data="links" id="links">
         <nav>
-          <a x-bind:href="`mailto:${email}`" x-text="email"></a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOJ-ySuYdEjagnNw-bkGkqiM4l0nAz7VAUncnWsrWzpBjOWA/viewform?usp=sf_link" target="_blank">Enquiry form</a>
+          <a x-bind:href="`mailto:${email}`" x-text="email" data-umami-event="Clicked link" data-umami-event-link="Email"></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOJ-ySuYdEjagnNw-bkGkqiM4l0nAz7VAUncnWsrWzpBjOWA/viewform?usp=sf_link" target="_blank" data-umami-event="Clicked link" data-umami-event-link="Enquiry form">Enquiry form</a>
         </nav>
         <nav>
-          <a href="https://www.linkedin.com/company/forandwhile/" target="_blank">LinkedIn</a>
-          <a href="https://www.aneur.in" target="_blank">Founder</a>
+          <a href="https://www.linkedin.com/company/forandwhile/" target="_blank" data-umami-event="Clicked link" data-umami-event-link="LinkedIn">LinkedIn</a>
+          <a href="https://www.aneur.in" target="_blank" data-umami-event="Clicked link" data-umami-event-link="Found">Founder</a>
         </nav>
       </section>
     </main>
