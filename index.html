@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
     <title>For &amp; While - Coding Excellence</title>
   </head>
   <body>
-    <section x-data="logo" id="logo">
-      <div class="svg" x-html="svg"></div>
-    </section>
+    <main>
+      <section x-data="logo" id="logo">
+        <h1>For &amp; While - Coding Excellence</h1>
+        <div class="svg" x-html="svg"></div>
+      </section>
+
+      <section x-data="links" id="links">
+        <nav>
+          <a x-bind:href="`mailto:${email}`" x-text="email"></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOJ-ySuYdEjagnNw-bkGkqiM4l0nAz7VAUncnWsrWzpBjOWA/viewform?usp=sf_link" target="_blank">Enquiry form</a>
+        </nav>
+        <nav>
+          <a href="https://www.linkedin.com/company/forandwhile/" target="_blank">LinkedIn</a>
+          <a href="https://www.aneur.in" target="_blank">Founder</a>
+        </nav>
+      </section>
+    </main>
 
     <div x-data="analytics">
       <template x-if="scriptUrl && websiteId">
