@@ -3,7 +3,8 @@ $border-width: 0.2rem;
 
 :root {
   --bg-color: #2f2f2f;
-  --color: #c2a033;
+  --color: #e0e0e0;
+  --cta-color: #c2a033;
 }
 
 html,
@@ -17,11 +18,11 @@ body {
 
 a {
   border-bottom: $border-width solid var(--bg-color);
-  color: var(--color);
+  color: var(--cta-color);
   text-decoration: none;
 
   &:hover {
-    border-bottom: $border-width solid var(--color);
+    border-bottom: $border-width solid var(--cta-color);
   }
 }
 
@@ -55,7 +56,7 @@ section {
   }
 
   svg {
-    fill: var(--color);
+    fill: var(--cta-color);
     max-width: 32rem;
     width: 100%;
   }
@@ -74,6 +75,10 @@ section {
 
     @media (min-width: $bp-desktop) {
       align-items: start;
+    }
+
+    span {
+      color: var(--color);
     }
 
     a {
